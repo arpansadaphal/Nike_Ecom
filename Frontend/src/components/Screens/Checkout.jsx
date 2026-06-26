@@ -94,7 +94,7 @@ const Checkout = () => {
     setIsPaymentProcessing(true);
     try {
       const options = {
-        key_id: razorpayOrder.key_id || "rzp_test_RO1zXBvs9Vy5Yy",
+        key: razorpayOrder.key_id || "rzp_test_RO1zXBvs9Vy5Yy",
         amount: razorpayOrder.amount, // Amount in paise
         currency: razorpayOrder.currency,
         name: "Your Company Name",
